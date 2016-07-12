@@ -1,0 +1,26 @@
+{
+  "name": "draw-something",
+  "version": "1.0.0",
+  "description": "你猜我画",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JobbyM/draw-something.git"
+  },
+  "keywords": [
+    "webpak",
+    "es6",
+    "vue",
+    "websocket",
+    "canvas"
+  ],
+  "author": "JobbyM",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JobbyM/draw-something/issues"
+  },
+  "homepage": "https://github.com/JobbyM/draw-something#readme"
+}
