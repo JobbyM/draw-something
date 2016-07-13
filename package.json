@@ -22,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/JobbyM/draw-something/issues"
   },
-  "homepage": "https://github.com/JobbyM/draw-something#readme"
+  "homepage": "https://github.com/JobbyM/draw-something#readme",
+  "dependencies": {
+    "vue": "^1.0.26",
+    "ws": "^1.1.1"
+  }
 }
