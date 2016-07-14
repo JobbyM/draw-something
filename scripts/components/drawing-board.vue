@@ -98,7 +98,7 @@ export default{
 }
 </script>
 
-<style lang='less'>
+<style>
   #canvas {
     background: pink;
     cursor: default

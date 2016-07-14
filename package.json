@@ -4,6 +4,9 @@
   "description": "你猜我画",
   "main": "index.js",
   "scripts": {
+    "dev": "node server.js",
+    "build": "set BABEL_ENV=production && webpack --config webpack.config.pro.js --progress",
+    "lint": "eslint scripts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,7 +14,7 @@
     "url": "git+https://github.com/JobbyM/draw-something.git"
   },
   "keywords": [
-    "webpak",
+    "webpack",
     "es6",
     "vue",
     "websocket",
@@ -26,5 +29,22 @@
   "dependencies": {
     "vue": "^1.0.26",
     "ws": "^1.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-2": "^6.11.0",
+    "babel-runtime": "^6.9.2",
+    "css-loader": "^0.23.1",
+    "vue-hot-reload-api": "^1.3.3",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^8.5.3",
+    "vue-style-loader": "^1.0.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   }
 }

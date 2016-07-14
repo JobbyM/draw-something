@@ -1,4 +1,4 @@
-/*** ws-socket.js ***/
+/*** ws-server.js ***/
 'use strict'
 // 实例化WebSocketServer 对象，监听8090端口
 const WebSocketServer = require('ws').Server
