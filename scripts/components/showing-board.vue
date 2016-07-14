@@ -1,5 +1,5 @@
 <template>
-  <canvas id='showing' width='520' height='350' style='border: 1px solid #999;'><canvas>
+  <canvas id='showing' width='520' height='350' style='border: 1px solid #999;'></canvas>
   <div id='answer-box'>
     <span>Answer:</span>
     <input id='answer' type='text'>

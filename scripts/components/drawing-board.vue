@@ -47,7 +47,7 @@ class Draw {
     )
 
     this.path.beginX = e.clientX - this.stage_info.left
-    this.path.beginY = e.clientY - this.stage_info.to
+    this.path.beginY = e.clientY - this.stage_info.top
 
     document.onmousemove = () => {
       this.drawding(event, ws)
@@ -60,8 +60,8 @@ class Draw {
       e.clientY - this.stage_info.top
     )
 
-    this.path.endX = e.clientX = this.stage_info.left
-    this.path.endY = e.clientY = this.stage_info.top
+    this.path.endX = e.clientX - this.stage_info.left
+    this.path.endY = e.clientY - this.stage_info.top
 
     ws.send(this.path.beginX + '.' + this.path.beginY + '.' + this.path.endX
       + '.' + this.path.endY)
@@ -91,7 +91,7 @@ export default{
     }
     ws.onmessage = (msg) => {
       msg.data.split(':')[0] == 'keyword' ?
-        document.getElmentById('keyword').innerHTML = msg.data.split(':')[1] :
+        document.getElementById('keyword').innerHTML = msg.data.split(':')[1] :
         false
     }
   }

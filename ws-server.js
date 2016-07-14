@@ -23,19 +23,19 @@ wss.on('connection', (ws) => {
     console.log('received: %s', message)
     if(message == keyWord){
       console.log('correct')
-      wss.client.forEach((client) => {
+      wss.clients.forEach((client) => {
         client.send('答对了！！')
       })
     }else{
       console.log('wrong')
-      wss.client.forEach((client) => {
+      wss.clients.forEach((client) => {
         client.send(message)
       })
     }
   })
 
   // 服务器初始化即向客户端提供一个关键词
-  wss.client.forEach((client) => {
+  wss.clients.forEach((client) => {
     client.send('keyword:' + keyWord)
   })
 })
