@@ -13,7 +13,7 @@
 class Draw {
   constructor(el){
     this.el = el
-    this.canvas = document.getElementById('canvs')
+    this.canvas = document.getElementById('canvas')
     this.cxt = this.canvas.getContext('2d')
     this.stage_info = canvas.getBoundingClientRect()
     this.path = {
